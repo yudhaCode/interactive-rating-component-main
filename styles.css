@@ -1,0 +1,212 @@
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsla(216, 12%, 54%, 0.205);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* CSS Reset */
+
+/* Box sizing border-box for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default margin for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Remove default outline styles */
+:focus {
+  outline: none;
+}
+
+/* Reset anchor text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Reset form elements */
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+/* Reset button styles */
+button {
+  cursor: pointer;
+}
+
+/* Reset image border */
+img {
+  border: 0;
+}
+
+/* Reset table border spacing and border collapse */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset form input placeholder style */
+::placeholder {
+  opacity: 1;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--neutral-very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 15px;
+  color: var(--neutral-light-grey);
+  padding: 0 1rem;
+}
+
+.card-wrapper {
+  max-width: 375px;
+  background-color: var(--neutral-dark-blue);
+  border-radius: 1.2rem;
+  padding: 1.8rem 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.icon-star {
+  padding: 12px;
+  background-color: var(--neutral-medium-grey);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.main-title {
+  font-size: 25.6px;
+  color: #ffffff;
+  margin: 0.8rem 0;
+}
+
+.text {
+  line-height: 1.4;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  padding: 12.8px 19.2px;
+  background-color: var(--neutral-medium-grey);
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1.8rem 0;
+  transition: background-color 0.6s ease;
+}
+
+.rating:hover {
+  background-color: var(--neutral-light-grey);
+  color: #ffffff;
+}
+
+.rating:active {
+  background-color: var(--primary-orange);
+}
+
+.selected {
+  background-color: var(--neutral-light-grey);
+  color: #ffffff;
+}
+
+.submit-btn {
+  background-color: var(--primary-orange);
+  width: 100%;
+  padding: 13.3px;
+  border-radius: 2rem;
+  color: #ffffff;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #ffffff;
+  color: var(--primary-orange);
+}
+
+.display-none {
+  display: none;
+}
+
+/* result-card */
+.center-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-illustration-wrapper {
+  text-align: center;
+}
+
+.phone-illustration {
+  margin-bottom: 1.2rem;
+  width: 134px;
+}
+
+.sub-title {
+  background-color: var(--neutral-medium-grey);
+  color: var(--primary-orange);
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  font-weight: normal;
+  padding: 0.4rem 1.3rem;
+  display: inline-block;
+  margin-bottom: 1.7rem;
+}
+
+.h2-text {
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.result-text {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 290px;
+  line-height: 1.5;
+}
+
+/* attribution */
+.attribution a {
+  color: var(--primary-orange);
+}
